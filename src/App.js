@@ -29,7 +29,7 @@ class App extends React.Component {
 	componentDidMount() {
 		const id = this.props.id
 		this.setState({loading:true})
-		fetch("http://www.omdbapi.com/?s=%27Lord%27&apikey=" + key)
+		fetch("https://www.omdbapi.com/?s=%27Lord%27&apikey=" + key)
 			.then(response => response.json())
 			.then(data => {
 				this.setState({
@@ -48,7 +48,7 @@ class App extends React.Component {
 
 	handleSubmit(event){
 		event.preventDefault()
-		fetch("http://www.omdbapi.com/?s=%27" + this.state.topText + "%27&apikey=" + key)
+		fetch("https://www.omdbapi.com/?s=%27" + this.state.topText + "%27&apikey=" + key)
 			.then(response => response.json())
 			.then(data2 => {
 				this.setState({
@@ -58,7 +58,7 @@ class App extends React.Component {
 	}
 
 	handleClick(){
-		fetch("http://www.omdbapi.com/?s=%27" + this.state.topText + "%27&page=" + this.state.pageNumber + "&apikey=" + key)
+		fetch("https://www.omdbapi.com/?s=%27" + this.state.topText + "%27&page=" + this.state.pageNumber + "&apikey=" + key)
 			.then(response => response.json())
 			.then(data3 => {
 				this.setState({

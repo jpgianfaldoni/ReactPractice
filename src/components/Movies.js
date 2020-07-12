@@ -17,7 +17,7 @@ class Movies extends React.Component {
 
 	componentDidMount() {
 		const id = this.props.id
-		fetch("http://www.omdbapi.com/?i=" + this.props.movieDataSent[id].imdbID + "&apikey=a1f39f57")
+		fetch("https://www.omdbapi.com/?i=" + this.props.movieDataSent[id].imdbID + "&apikey=a1f39f57")
 			.then(response => response.json())
 			.then(data => {
 				this.setState({
@@ -30,7 +30,7 @@ class Movies extends React.Component {
 		const previusId = prevProps.id
 		const id = this.props.id
 		if (prevProps.movieDataSent[previusId].imdbID !== this.props.movieDataSent[id].imdbID){
-		fetch("http://www.omdbapi.com/?i=" + this.props.movieDataSent[id].imdbID + "&apikey=a1f39f57")
+		fetch("https://www.omdbapi.com/?i=" + this.props.movieDataSent[id].imdbID + "&apikey=a1f39f57")
 			.then(response => response.json())
 			.then(data => {
 				this.setState({
