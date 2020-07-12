@@ -69,7 +69,6 @@ class App extends React.Component {
 	}
 
 	render(){
-		console.log(key)
 		const elements = []
 		var i
 		for (i = 0; i < this.state.movieData.length; i++) {
