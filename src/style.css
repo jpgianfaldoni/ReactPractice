@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	display: inline;
+}
+.movies {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #181717;
+	max-width: 3000px;
+	justify-content: center;
+}
+
+.header {
+  	display: flex;
+  	margin-right: 10px;
+}
+.button{
+	background-color: #383535;
+}
+.poster{
+	text-align: center;
+}
+
+.moviesComponent {
+  width: 350px;
+  border: 5px solid black;
+  padding: 5px;
+  margin: 2px;
+  text-align: center;
+  background-color: black;
+  height: 750px;
+}
+
+@font-face {
+    font-family: "My Custom Font";
+    src: url(https://fonts.googleapis.com/css?family=Roboto) format("truetype");
+}
+
+h3 { 
+    font-family: "My Custom Font", Roboto;
+    color:  #F6F1F1;
+}
+
+a { 
+    font-family: "My Custom Font", Roboto;
+    color:  #F6F1F1;
+    font-size: 25px;
+}
